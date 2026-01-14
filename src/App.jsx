@@ -154,39 +154,28 @@ export default function App() {
             </p>
 
             <div className="mt-10 grid lg:grid-cols-2 gap-6">
-              <form className="bg-white dark:bg-zinc-900 p-6 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-800 grid gap-4">
-                <input
-                  className="p-4 rounded-xl border border-zinc-300 dark:border-zinc-700 dark:bg-zinc-950"
-                  placeholder="Nom"
-                />
-                <input
-                  className="p-4 rounded-xl border border-zinc-300 dark:border-zinc-700 dark:bg-zinc-950"
-                  placeholder="Email"
-                />
-                <textarea
-                  className="p-4 rounded-xl border border-zinc-300 dark:border-zinc-700 dark:bg-zinc-950"
-                  placeholder="Décris ton projet (activité, pages, style, délai...)"
-                  rows="6"
-                />
-                <button
-                  className="bg-zinc-900 text-white py-3 rounded-xl hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
-                  type="button"
-                >
-                  Envoyer la demande
-                </button>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                  (Formulaire non connecté pour l’instant — on le branchera ensuite à Netlify/Formspree.)
-                </p>
-              </form>
+  <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-800">
+    <h3 className="text-lg font-semibold mb-4">Formulaire de contact</h3>
 
-              <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-800">
-                <h3 className="font-semibold text-lg">Infos</h3>
-                <ul className="mt-4 space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
-                  <li>• Email : ton.email@example.com</li>
-                  <li>• TikTok : @toncompte</li>
-                  <li>• Twitch : tonpseudo</li>
-                  <li>• Paris / Remote</li>
-                </ul>
+    <div className="w-full h-[700px] rounded-2xl overflow-hidden ring-1 ring-zinc-200 dark:ring-zinc-800">
+      <iframe
+        src="https://form.jotform.com/milanseisei/feedback-form"
+        className="w-full h-full border-0"
+        title="Formulaire de contact INDUS-IT 360"
+      />
+    </div>
+  </div>
+
+  <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl ring-1 ring-zinc-200 dark:ring-zinc-800">
+    <h3 className="font-semibold text-lg">Infos</h3>
+    <ul className="mt-4 space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+      <li>• Email : ton.email@example.com</li>
+      <li>• TikTok : @toncompte</li>
+      <li>• Twitch : tonpseudo</li>
+      <li>• Paris / Remote</li>
+    </ul>
+
+
 
                 <div className="mt-6 rounded-2xl bg-zinc-100 dark:bg-zinc-800 p-5 text-sm">
                   <p className="font-semibold">Process</p>
