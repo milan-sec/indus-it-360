@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import previewImage from "./assets/indus.png";
+
 
 export default function App() {
   const [dark, setDark] = useState(() => {
