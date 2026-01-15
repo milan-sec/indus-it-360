@@ -113,9 +113,14 @@ export default function App() {
           </div>
         </div>
 
-        <div className="rounded-3xl bg-zinc-200 dark:bg-zinc-800 h-72 md:h-80 flex items-center justify-center text-zinc-600 dark:text-zinc-200">
-          Aperçu / Screenshot projet (à remplacer)
-        </div>
+<div className="rounded-3xl overflow-hidden shadow-lg">
+  <img
+    src={previewImage}
+    alt="Aperçu du site INDUS-IT 360"
+    className="w-full h-72 md:h-80 object-cover"
+  />
+</div>
+
       </main>
 
       {/* Services */}
