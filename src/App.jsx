@@ -157,9 +157,11 @@ export default function App() {
       <section id="projects" className="border-t border-zinc-200 dark:border-zinc-800">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <h2 className="text-3xl font-bold">Projets</h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-300 max-w-2xl">
-            Remplace ces cartes par tes vrais projets (liens GitHub / Vercel / Netlify).
-          </p>
+        <p className="mt-3 text-zinc-600 dark:text-zinc-300 max-w-2xl">
+  Voici quelques exemples de projets réalisés avec une attention particulière portée
+  au design, à la performance et à l’expérience utilisateur.
+</p>
+
 
           <div className="mt-10 grid md:grid-cols-3 gap-6">
             {[
