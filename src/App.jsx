@@ -1,13 +1,25 @@
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(() => {
+    // On garde le choix utilisateur si déjà défini
+    const saved = localStorage.getItem("theme");
+    if (saved) return saved === "dark";
+    // sinon par défaut dark
+    return true;
+  });
 
   useEffect(() => {
-    const root = document.documentElement;
-    if (dark) root.classList.add("dark");
-    else root.classList.remove("dark");
+    const root = document.documentElement; // <html>
+    if (dark) {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
   }, [dark]);
+
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-white">
